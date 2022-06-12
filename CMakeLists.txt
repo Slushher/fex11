@@ -8,4 +8,4 @@ file(GLOB_RECURSE SOURCES RELATIVE ${CMAKE_SOURCE_DIR} "src/*.c")
 add_executable(fex11 ${SOURCES})
 
 target_include_directories(fex11 PUBLIC headers)
-target_link_libraries(fex11 -lX11)
+target_link_libraries(fex11 -lX11 -lXpm)

@@ -1,4 +1,6 @@
 #include "../headers/event_loop.h"
+#include "../headers/image.h"
+#include "../headers/window.h"
 
 bool event_loop(Display *display, XEvent event)
 {
@@ -11,6 +13,6 @@ bool event_loop(Display *display, XEvent event)
             printf("doo doo\n");
             //break;
         }
-
+        displayImage(returnDisplayHandle(), returnWindowHandle());
     }
 }

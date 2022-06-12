@@ -9,5 +9,9 @@
 void initDisplay();
 void initWindow();
 void windowUpdate();
+void windowResize(int x, int y, unsigned int width, unsigned int height);
+Display *returnDisplayHandle();
+Window returnWindowHandle();
+
 
 #endif
